@@ -1,4 +1,4 @@
-package com.runapp;
+package com.pilotstudentstudios.dice;
 
 import com.facebook.react.ReactActivity;
 

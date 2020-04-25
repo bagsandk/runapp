@@ -1,4 +1,4 @@
-package com.runapp;
+package com.pilotstudentstudios.dice;
 
 import android.app.Application;
 import android.content.Context;

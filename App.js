@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import React from 'react';
+import { Text, TouchableOpacity, View, StatusBar } from 'react-native';
+import Router from './src/router';
+import { Provider } from 'react-redux';
+import { store } from './src/redux';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-
-  render() {
-    return (
-      <View>
-        <Text> App </Text>
-      </View>
-    );
-  }
+const App = () => {
+  return (
+    <Provider store={store}>
+      <StatusBar hidden />
+      <Router />
+    </Provider>
+  );
 }
 
 export default App;
